@@ -91,8 +91,8 @@ namespace DungeonCrawler.World
                     if (t != null)
                     {
                         toReturn.Add(t);
-
-                        toReturn.AddRange(this.getAllTilesAroundTile(t));
+                        if (t.Type != TileType.WALL)
+                            toReturn.AddRange(this.getAllTilesAroundTile(t));
                     }
                 }
                 if (i > 3 && i < 6)
@@ -101,8 +101,8 @@ namespace DungeonCrawler.World
                     if (t != null)
                     {
                         toReturn.Add(t);
-
-                        toReturn.AddRange(this.getAllTilesAroundTile(t));
+                        if (t.Type != TileType.WALL)
+                            toReturn.AddRange(this.getAllTilesAroundTile(t));
                     }
                 }
                 if (i > 6 && i < 9)
@@ -111,8 +111,8 @@ namespace DungeonCrawler.World
                     if (t != null)
                     {
                         toReturn.Add(t);
-
-                        toReturn.AddRange(this.getAllTilesAroundTile(t));
+                          if (t.Type != TileType.WALL)
+                            toReturn.AddRange(this.getAllTilesAroundTile(t));
                     }
                 }
                 if (i > 9)
@@ -121,8 +121,8 @@ namespace DungeonCrawler.World
                     if (t != null)
                     {
                         toReturn.Add(t);
-
-                        toReturn.AddRange(this.getAllTilesAroundTile(t));
+                        if (t.Type != TileType.WALL)
+                            toReturn.AddRange(this.getAllTilesAroundTile(t));
                     }
                 }
             }
